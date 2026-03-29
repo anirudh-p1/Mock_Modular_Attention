@@ -6,13 +6,13 @@ Research using a novel transformer attention mechanism that replaces standard he
 
 This project focuses on managing and mitigating the existential risks associated with misaligned AGI, by ensuring that sequential learning is governed by mathematical constraints rather than arbitrary weight fluctuations. Beyond safety, the implementation leverages truncated Taylor series approximations to maintain computational efficiency, leading towards robust, interpretable and high-performance sequential modelling, which is especially useful in sensitive domains like predictive healthcare and automated reasoning.
 
-Built in 6-hours
+Built in 6-hours (Post EV rejection)
 
 Replaced Softmax with O(1) Mock Modular Kernels (f,ω,ϕ) per kernel operation via Horner’s Method to enable structural interpretability in Transformers.
 
 Status: It works! (Functional Prototype)
 
-Other:
+# Other:
 
 Horner’s Method Optimization: Reducing polynomial evaluation to O(1) constant-time complexity per kernel operation, ensuring MMA remains competitive with standard attention.
 
@@ -24,4 +24,5 @@ Reducing Model Opacity: Moving away from arbitrary weight fluctuations toward st
 Proactive Alignment: Enabling automated circuit analysis to detect potential deceptive alignment by providing more "auditable" internal logic.
 OOD Robustness: Utilizing the inductive biases of modular forms to improve performance on Out-of-Distribution data, critical for safety-critical domains like predictive healthcare and automated reasoning.
 
-Next Milestone: Large-scale benchmarking against standard Transformers on OOD datasets and a formal mechanistic interpretability audit using Sparse Autoencoders (SAEs).
+# Next Milestone: 
+Large-scale benchmarking against standard Transformers on OOD datasets and a formal mechanistic interpretability audit using Sparse Autoencoders (SAEs).
