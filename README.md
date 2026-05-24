@@ -36,7 +36,7 @@ $$K(q) = a_0 + q(a_1 + q(a_2 + q \cdot a_3))$$
 
 Every implemented kernel is analytically verified to be non-negative across the bounded region $q \in [0, 1]$, satisfying probability simplex constraints upon normalization:
 
-| Kernel Identifier | Mathematical Representation | Truncated Taylor Polynomial ($O(q^4)$) | Coefficient Invariants $[a_0, a_1, a_2, a_3]$ | Structural Inductive Bias |
+| Kernel Identifier | Mathematical Representation | Truncated Taylor Polynomial $(O(q^4))$ | Coefficient Invariants $[a_0, a_1, a_2, a_3]$ | Structural Inductive Bias |
 | :--- | :--- | :--- | :--- | :--- |
 | `mock_theta_f` | $\sum_{n \ge 0} \frac{q^{n^2}}{((-q; q)_n)^2}$ | $1 + q - 2q^2 + 3q^3$ | `[1.0, 1.0, -2.0, 3.0]` | **Principal Growth Regime:** Aligns weights along the torus geometry of the modular curve. |
 | `mock_theta_omega` | $\sum_{n \ge 0} \frac{q^{2n(n+1)}}{((q; q^2)_{n+1})^2}$ | $1 + 2q + 3q^2 + 4q^3$ | `[1.0, 2.0, 3.0, 4.0]` | **Aggressive Attenuation:** Faster exponent growth forces high-order sparsity. |
