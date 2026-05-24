@@ -66,7 +66,7 @@ The repository is modularized for rapid integration and benchmarking:
 
 The scaling temperature $\tau$ is stored internally in log-space (`self.log_temperature`) to guarantee strict parameter positivity throughout backpropagation:
 
-$$\tau = \exp(\text{log\_temperature}) > 0$$
+$$\tau = \exp(\text{log-temperature}) > 0$$
 
 ---
 
