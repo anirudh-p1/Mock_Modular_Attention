@@ -63,6 +63,7 @@ The repository is modularized for rapid integration and benchmarking:
 * `transformer.py`: Multi-layer pre-norm causal sequence architecture (`MockModularTransformer`) built directly over MMA layers.
 
 ### Parameter Invariance
+
 The scaling temperature $\tau$ is stored internally in log-space (`self.log_temperature`) to guarantee strict parameter positivity throughout backpropagation:
 
 $$\tau = \exp(\text{log\_temperature}) > 0$$
